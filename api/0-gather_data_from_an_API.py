@@ -13,7 +13,7 @@ if __name__ == "__main__":
     EMPLOYEE_ID = sys.argv[1]
 
     RESPONSE = requests.get(
-        f"{URL}/users/{EMPLOYEE_ID}/todos",
+        f"{BASE_URL}/users/{EMPLOYEE_ID}/todos",
         params={"_expand": "user"}
     )
     data = RESPONSE.json()
