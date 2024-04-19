@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""Use a REST API for a given employee ID, and returns information 
-about his/her TODO list progress"""
+"""Use a REST API for a given employee ID, and
+returns information about his/her TODO list progress"""
 import requests
 import sys
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
